@@ -4,7 +4,9 @@ import MultipeerConnectivity
 class ViewController: UIViewController, MCBrowserViewControllerDelegate,
 MCSessionDelegate,UITextFieldDelegate {
     
-
+    //let text_logo = UIImage(named: "YikChatTextLogo.jpg")
+    //let imageview = UIImageView(image: text_logo)
+    //self.view.addSubview(imageview)
     
     var browser : MCBrowserViewController!
     var assistant : MCAdvertiserAssistant!
@@ -25,7 +27,7 @@ MCSessionDelegate,UITextFieldDelegate {
         self.browser = MCBrowserViewController(serviceType:serviceType,
             session:self.session)
         
-        self.browser.delegate = self;
+        self.browser.delegate = self
         
         //initialize assistant
         self.assistant = MCAdvertiserAssistant(serviceType:serviceType,
@@ -69,25 +71,20 @@ MCSessionDelegate,UITextFieldDelegate {
         // Add the name to the message and display it
         //let message = "\(name): \(text)\n"
         self.chatView.text = self.chatView.text + text
-        //[TextView scrollRangeToVisible:NSMakeRange([TextView.text length], 0)];
-       // chatView.scrollRangeToVisible(0, chatView.text)
         
     }
     
     @IBAction func showBrowser(sender: UIButton) {
-        // Show the browser view controller
         self.presentViewController(self.browser, animated: true, completion: nil)
     }
     
     func browserViewControllerDidFinish(
         browserViewController: MCBrowserViewController!)  {
-            // Called when the browser view controller is dismissed
             connection()
             self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func connection()  {
-            // Called when the browser view controller is dismissed
         let message = "Someone has joined the YikChat!\n"
         self.chatView.text = self.chatView.text + message
 
@@ -95,16 +92,13 @@ MCSessionDelegate,UITextFieldDelegate {
     
     func browserViewControllerWasCancelled(
         browserViewController: MCBrowserViewController!)  {
-            // Called when the browser view controller is cancelled
             
             self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func session(session: MCSession!, didReceiveData data: NSData!,
         fromPeer peerID: MCPeerID!)  {
-            // Called when a peer sends an NSData to us
             
-            // This needs to run on the main queue
             dispatch_async(dispatch_get_main_queue()) {
                 
                 var msg = NSString(data: data, encoding: NSUTF8StringEncoding)
@@ -118,30 +112,25 @@ MCSessionDelegate,UITextFieldDelegate {
         return false;
     }
     
-    // The following methods do nothing, but the MCSessionDelegate protocol
-    // requires that we implement them.
+    //for whatever reason these methods are necessary to placate xcode, but aren't used
     func session(session: MCSession!,
         didStartReceivingResourceWithName resourceName: String!,
         fromPeer peerID: MCPeerID!, withProgress progress: NSProgress!)  {
             
-            // Called when a peer starts sending a file to us
     }
     
     func session(session: MCSession!,
         didFinishReceivingResourceWithName resourceName: String!,
         fromPeer peerID: MCPeerID!,
         atURL localURL: NSURL!, withError error: NSError!)  {
-            // Called when a file has finished transferring from another peer
     }
     
     func session(session: MCSession!, didReceiveStream stream: NSInputStream!,
         withName streamName: String!, fromPeer peerID: MCPeerID!)  {
-            // Called when a peer establishes a stream with us
     }
     
     func session(session: MCSession!, peer peerID: MCPeerID!,
         didChangeState state: MCSessionState)  {
-            // Called when a connected peer changes state (for example, goes offline)
             
     }
     

@@ -16,6 +16,9 @@
 		18741F001A2E30580099A935 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18741EFF1A2E30580099A935 /* Images.xcassets */; };
 		18741F031A2E30580099A935 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18741F011A2E30580099A935 /* LaunchScreen.xib */; };
 		18741F0F1A2E30580099A935 /* YikChatSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18741F0E1A2E30580099A935 /* YikChatSwiftTests.swift */; };
+		44D0A6601A2E9E9200ACDB76 /* YikChat Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D0A65E1A2E9E9200ACDB76 /* YikChat Logo.jpg */; };
+		44D0A6611A2E9E9200ACDB76 /* YikChatTextLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D0A65F1A2E9E9200ACDB76 /* YikChatTextLogo.jpg */; };
+		44D0A6631A2EBE2E00ACDB76 /* YikChatpic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44D0A6621A2EBE2E00ACDB76 /* YikChatpic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		18741F081A2E30580099A935 /* YikChatSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YikChatSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18741F0D1A2E30580099A935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18741F0E1A2E30580099A935 /* YikChatSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YikChatSwiftTests.swift; sourceTree = "<group>"; };
+		44D0A65E1A2E9E9200ACDB76 /* YikChat Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "YikChat Logo.jpg"; path = "../Fall_2014/YikChat Logo.jpg"; sourceTree = "<group>"; };
+		44D0A65F1A2E9E9200ACDB76 /* YikChatTextLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = YikChatTextLogo.jpg; path = ../Fall_2014/YikChatTextLogo.jpg; sourceTree = "<group>"; };
+		44D0A6621A2EBE2E00ACDB76 /* YikChatpic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = YikChatpic.jpg; path = ../../YikChatpic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 		18741EE71A2E30580099A935 = {
 			isa = PBXGroup;
 			children = (
+				44D0A65E1A2E9E9200ACDB76 /* YikChat Logo.jpg */,
+				44D0A65F1A2E9E9200ACDB76 /* YikChatTextLogo.jpg */,
 				18741EF21A2E30580099A935 /* YikChatSwift */,
 				18741F0B1A2E30580099A935 /* YikChatSwiftTests */,
 				18741EF11A2E30580099A935 /* Products */,
@@ -87,6 +95,7 @@
 				18741EFA1A2E30580099A935 /* ViewController.swift */,
 				182116531A2E7EBF00022CB4 /* global.swift */,
 				18741EFC1A2E30580099A935 /* Main.storyboard */,
+				44D0A6621A2EBE2E00ACDB76 /* YikChatpic.jpg */,
 				182116511A2E796F00022CB4 /* Settings.swift */,
 				18741EFF1A2E30580099A935 /* Images.xcassets */,
 				18741F011A2E30580099A935 /* LaunchScreen.xib */,
@@ -202,7 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				18741EFE1A2E30580099A935 /* Main.storyboard in Resources */,
+				44D0A6601A2E9E9200ACDB76 /* YikChat Logo.jpg in Resources */,
+				44D0A6611A2E9E9200ACDB76 /* YikChatTextLogo.jpg in Resources */,
 				18741F031A2E30580099A935 /* LaunchScreen.xib in Resources */,
+				44D0A6631A2EBE2E00ACDB76 /* YikChatpic.jpg in Resources */,
 				18741F001A2E30580099A935 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
